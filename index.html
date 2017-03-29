@@ -1,16 +1,261 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-    <title></title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello Newman!</h1>
-    <img src="https://2.bp.blogspot.com/-9Aor55v1I18/UWMUeYlE-dI/AAAAAAAAUjs/mkLuvrTzxkg/s320/dennis.jpg" />
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-    <h2>Check out these moves!    </h2>
-    <img src="http://pixel.nymag.com/imgs/daily/vulture/2015/10/20/drake-dance/drake-12.w529.h352.gif" />
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Antoni (Tony) Chopcinski</h1>
+            <h2>Junior Developer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
+        <div id="lead-overlay"></div>
 
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Just a junior developer starting out on his journey to change the world, one program at a time! Has an endless curiousity about the way things work, and has the desire to learn something new every day.
+                        Lover of most things "geek", huge baseball fan, a bit of a sneaker head and a semi-professional bowler.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="October 2011 - December 2016">
+                <h3>Huntington National Bank</h3>
+                <h4>Branch Relationship Banker and In-Store Banker</h4>
+                <p>
+                    In-Store Bankers are hybrid roles comprised of Personal Banker and Teller. Able to learn new systems quickly and teach them out to coworkers. Built relationships to increase profitability for the branch. Closed over 3 million in home loans, and became the go-to-guy for many local businesses banking needs.
+                </p>
+            </div>
+
+            <div data-date="October 2005 - October 2011">
+                <h3>Best Buy</h3>
+                <h4>Mobile Sales Consultant and Home Theater Senior</h4>
+                <p>
+                    Learned about cutting edge technology on a daily basis and how it could impact individuals lives in both Home Theater and Cell Phones. Developed teachable sales techniques to increase individual sales and total overall revenue for the store.
+                </p>
+            </div>
+
+            <div data-date="February 2004 - March 2008">
+                <h3>Clear Channel Sandusky</h3>
+                <h4>Production Director and On-Air Talent</h4>
+                <p>
+                    Responsible for all non-live/non-music content on across three different radio station formats. This included creation of commercials, station imaging and ensuring each spot ran as intended. Extremely detailed oriented. On-Air shifts 6 days a week across the three formats, “Mix”, Classic Rock and sideline reporting on Sports Talk.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Tech Elevator</h3>
+            <span class="education-date">Expected Graduation April 2017</span>
+            <h4>.NET Stack</h4>
+            <ul>
+                <li>
+                    Software Development: C#, ASP.NET MVC, JavaScript, HTML 5, CSS 3, and SQL
+                </li>
+                <li>
+                    Core Competencies: OOP, Database Design & Creation, Unit Testing, TDD
+                </li>
+                <li>
+                    Frameworks: .NET, MS Test, Cucumber, Bootstrap, jQuery, Ninject, Selenium WebDriver
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>First coding KATA</h3>
+                        <p>
+                            I used TDD to figure out this one. The Potter Kata involves a collection of 5 volumes of books. Each book has the cost of 10 units. If people buy mulitple books at the same time, they get a discount for the number of unique books. 5% off for 2 unique, 10% for 3, 20% for 4 and 25% for 5. If they were to buy 5 books, but all volume one, there would be no discount. If they were to buy 4 books, 2 of volume 3 and 4, they would get 5% off each book. Etc.
+                        </p>
+                        <a href="https://github.com/AChopcinski/KATApotter">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>National Park Campsite Finder</h3>
+                        <p>
+                            This is a console application that was created with a partner that simulates making reservations at various campgrounds. An initial database was provided with pre-made reservations. The application was designed with console menus for navigating. Users were given a list of available campsites, they then requested a site and date range. If any date in the range is unavailable, the reservation would not be made.
+                        </p>
+                        <a href="https://github.com/AChopcinski/CapstoneNationalParks">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>National Park Capstone Website</h3>
+                        <p>
+                            Working with a partner, we were given a database containing 12 National Parks. We were tasked with creating a website that would allow users to see a list of all the parks, be able to see details about individual parks (on their own webpage) and display a 5 day weather forecast. This was a challenging project, but it made seeing the final product even better. It was my first foray into the world of CSS, bootstrap was not used so there are some re-sizing issues.
+                        </p>
+                        <a href="https://github.com/AChopcinski/CapstoneNationalParks">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <!--<div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>HTML 5</li>
+            <li>CSS</li>
+
+        </ul>
+    </div>-->
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/githubiochop@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 Antoni Chopcinski
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
